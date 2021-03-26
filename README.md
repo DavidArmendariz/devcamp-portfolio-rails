@@ -27,3 +27,9 @@ rails db:create
 rails db:migrate
 rails s
 ```
+
+## Available routes
+
+```shell
+rails routes
+```
