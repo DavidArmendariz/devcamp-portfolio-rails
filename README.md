@@ -33,3 +33,15 @@ rails s
 ```shell
 rails routes
 ```
+
+## Generators
+
+Creating a scaffold:
+```shell
+rails g scaffold <Feature> <property_name:type>
+```
+
+Creating a controller:
+```shell
+rails g controller <Page> <page_name>
+```
