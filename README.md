@@ -45,3 +45,8 @@ Creating a controller:
 ```shell
 rails g controller <Page> <page_name>
 ```
+
+Creating a resource:
+```shell
+rails g resource <Resource> <property_name:type>
+```
