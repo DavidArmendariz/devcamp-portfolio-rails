@@ -1,0 +1,29 @@
+# Devcamp Portfolio
+
+## System dependencies
+
+RVM:
+
+```shell
+rvm install 2.5.0
+rvm use 2.5.0
+rvm gemset create devcamp_portfolio
+rvm gemset use devcamp_portfolio
+gem install bundler nokogiri rails
+```
+
+Postgres:
+
+```shell
+sudo apt install postgres postgres-contrib libpq-dev
+sudo su - postgres
+createuser -s -r <your_username>
+```
+
+## Development
+
+```shell
+rails db:create
+rails db:migrate
+rails s
+```
