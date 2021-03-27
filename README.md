@@ -22,6 +22,8 @@ createuser -s -r <your_username>
 
 ## Development
 
+Use configurations used in `.ruby-gemset` and `.ruby-version` by running `rvm use .`.
+
 ```shell
 rails db:create
 rails db:migrate
