@@ -62,6 +62,15 @@ Creating a resource:
 rails g resource <Resource> <property_name:type>
 ```
 
+## Examples
+
+```shell
+rails g resource Portfolio title:string subtitle:string body:text main_image:text thumb_image:text
+rails g model Skill title:string percent_utilized:integer
+rails g controller Pages home about contact
+rails g scaffold Blog title:string body:text
+```
+
 ## Database setup
 
 To remove all data and run what is inside `db/migrate/seeds.rb`:
