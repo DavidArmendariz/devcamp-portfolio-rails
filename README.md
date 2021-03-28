@@ -62,6 +62,12 @@ Creating a resource:
 rails g resource <Resource> <property_name:type>
 ```
 
+Generate a migration
+
+```shell
+rails g migration <description> <property_name:type>
+```
+
 ## Examples
 
 ```shell
@@ -69,6 +75,7 @@ rails g resource Portfolio title:string subtitle:string body:text main_image:tex
 rails g model Skill title:string percent_utilized:integer
 rails g controller Pages home about contact
 rails g scaffold Blog title:string body:text
+rails g migration add_slug_to_blogs slug:string:uniq
 ```
 
 ## Database setup
