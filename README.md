@@ -76,6 +76,7 @@ rails g model Skill title:string percent_utilized:integer
 rails g controller Pages home about contact
 rails g scaffold Blog title:string body:text
 rails g migration add_slug_to_blogs slug:string:uniq
+rails g migration add_post_status_to_blogs status:integer
 ```
 
 ## Database setup
