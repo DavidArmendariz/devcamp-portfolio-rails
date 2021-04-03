@@ -81,6 +81,8 @@ rails g model Topic title:string
 rails g migration add_topic_reference_to_blogs topic:references
 rails g migration add_badge_to_skills badge:text
 rails g model Technology name:string portfolio:references
+rails g devise:install
+rails g devise User
 ```
 
 ## Database setup
@@ -90,3 +92,7 @@ To remove all data and run what is inside `db/migrate/seeds.rb`:
 ```shell
 rails db:setup
 ```
+
+## Test user
+
+1. test@test.com / Test123#
