@@ -79,6 +79,7 @@ rails g migration add_slug_to_blogs slug:string:uniq
 rails g migration add_post_status_to_blogs status:integer
 rails g model Topic title:string
 rails g migration add_topic_reference_to_blogs topic:references
+rails g migration add_badge_to_skills badge:text
 ```
 
 ## Database setup
