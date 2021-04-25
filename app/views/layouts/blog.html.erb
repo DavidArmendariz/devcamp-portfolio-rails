@@ -14,12 +14,20 @@
   </head>
 
   <body>
-    <%= render 'shared/blog_nav' %>
+    <%= render "shared/blog_nav" %>
 
-    <%= yield %>
+    <div class="blog-header">
+      <div class="container">
+        <h1 class="blog-title">My Blog</h1>
+        <%= link_to "Write a New Blog", new_blog_path if logged_in?(:site_admin) %>
+      </div>
+    </div>
 
-    <%= render "shared/nav", location: 'bottom' %>
-
-    <%= source_helper("blog") %>
+    <div class="container">
+      <div class="row">
+        <%= yield %>
+        <%= source_helper("blog") %>
+      </div>
+    </div>
   </body>
 </html>
